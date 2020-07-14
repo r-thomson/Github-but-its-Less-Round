@@ -28,6 +28,12 @@
 	.BtnGroup-item:last-child {
 		border-radius: 0 3px 3px 0;
 	}
+	
+	.repohead > div:first-child, .repohead > nav {
+		max-width: 1280px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 	.avatar-user {
 		border-radius: 3px !important;
