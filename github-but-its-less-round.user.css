@@ -17,6 +17,18 @@
 		border-radius: 3px;
 	}
 
+	.BtnGroup-item {
+		border-radius: 0;
+	}
+
+	.BtnGroup-item:first-child {
+		border-radius: 3px 0 0 3px;
+	}
+
+	.BtnGroup-item:last-child {
+		border-radius: 0 3px 3px 0;
+	}
+
 	.avatar-user {
 		border-radius: 3px !important;
 	}
