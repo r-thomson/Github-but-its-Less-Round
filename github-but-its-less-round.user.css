@@ -35,6 +35,14 @@
 		margin-right: auto;
 	}
 
+	.project-column, .project-column .project-card {
+		border-radius: 3px !important;
+	}
+
+	.new-project-column {
+		border-radius: 0 !important;
+	}
+
 	.avatar-user {
 		border-radius: 3px !important;
 	}
