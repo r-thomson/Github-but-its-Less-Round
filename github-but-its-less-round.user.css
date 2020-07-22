@@ -28,7 +28,21 @@
 	.BtnGroup-item:last-child {
 		border-radius: 0 3px 3px 0;
 	}
-	
+
+	.BtnGroup-parent .BtnGroup-item {
+		border-radius: 0;
+	}
+
+	.btn-with-count {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.social-count {
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+	}
+
 	.repohead > div:first-child, .repohead > nav {
 		max-width: 1280px;
 		margin-left: auto;
