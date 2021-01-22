@@ -2,64 +2,116 @@
 @name         GitHub but it's Less Round
 @namespace    https://github.com/r-thomson
 @author       Ryan Thomson
-@version      0.1.0
+@version      0.2.0
 @license      MIT
 @homepageURL  https://github.com/r-thomson/Github-but-its-Less-Round
 @updateURL    https://raw.githubusercontent.com/r-thomson/Github-but-its-Less-Round/master/github-but-its-less-round.user.css
 ==/UserStyle== */
 
 @-moz-document domain("github.com") {
+	.avatar-user {
+		border-radius: 3px !important;
+	}
+	
+	.user-status-circle-badge-container {
+		bottom: unset;
+		margin-bottom: 0;
+		top: 100%;
+		margin-top: -40px;
+	}
+	
 	.Box,
+	.branch-action-body,
 	.btn,
-	.form-control,
-	.listgroup,
-	.menu,
-	.signed-commit-badge,
+	.commit-ref,
+	.dropdown-menu,
+	.file,
+	.filter-item,
+	.flash,
+	.form-control, .form-select,
+	.markdown-body .highlight pre, .markdown-body pre,
+	.markdown-body code, .markdown-body tt,
+	.pagination a, .pagination span, .pagination em,
+	.select-menu-modal,
+	.select-menu-text-filter input,
+	.suggester,
+	.timeline-comment,
+	.tooltipped::after,
 	.upload-enabled.focused {
 		border-radius: 3px;
 	}
-
-	.BtnGroup-item {
-		border-radius: 0;
+	
+	.rounded-1 {
+		border-radius: 3px !important;
 	}
-
-	.BtnGroup-item:first-child {
-		border-radius: 3px 0 0 3px;
+	
+	.IssueLabel,
+	.label, .Label,
+	.signed-commit-badge-small, .signed-commit-badge-medium, .signed-commit-badge-large,
+	.state, .State {
+		border-radius: 0.35em;
 	}
-
-	.BtnGroup-item:last-child {
-		border-radius: 0 3px 3px 0;
-	}
-
+	
+	.BtnGroup-item,
 	.BtnGroup-parent .BtnGroup-item {
 		border-radius: 0;
 	}
-
-	.btn-with-count {
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
+	
+	.container-preview .tabnav-tabs > .selected:first-child {
+		border-top-left-radius: 3px;
 	}
-
-	.social-count {
+	
+	.BtnGroup-item:first-child {
+		border-top-left-radius: 6px;
+		border-bottom-left-radius: 6px;
+	}
+	
+	.Box-header {
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+	}
+	
+	.suggester li:first-child {
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+	}
+	
+	.Box-row:last-of-type,
+	.drag-and-drop,
+	.suggester li:last-child {
+		border-bottom-left-radius: 3px;
+		border-bottom-right-radius: 3px;
+	}
+	
+	.subnav-item:first-child {
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+	}
+	
+	.BtnGroup-parent:last-child .BtnGroup-item,
+	.subnav-item:last-child {
 		border-top-right-radius: 3px;
 		border-bottom-right-radius: 3px;
 	}
-
-	.repohead > div:first-child, .repohead > nav {
-		max-width: 1280px;
-		margin-left: auto;
-		margin-right: auto;
+	
+	.rounded-left-1 {
+		border-bottom-left-radius: 3px !important;
+		border-top-left-radius: 3px !important;
 	}
-
-	.project-column, .project-column .project-card {
-		border-radius: 3px !important;
+	
+	.select-menu-tabs a, .select-menu-tabs .select-menu-tab-nav,
+	.tabnav-tab.selected, .tabnav-tab[aria-selected="true"], .tabnav-tab[aria-current]:not([aria-current="false"]) {
+		border-radius: 3px 3px 0 0;
 	}
-
-	.new-project-column {
-		border-radius: 0 !important;
-	}
-
-	.avatar-user {
-		border-radius: 3px !important;
+	
+	@media (min-width: 544px) {
+		.SelectMenu-modal {
+			border-radius: 3px;
+		}
+		
+		.Box--responsive .Box-header {
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+		}
 	}
 }
