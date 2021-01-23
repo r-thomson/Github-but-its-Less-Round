@@ -2,7 +2,7 @@
 @name         GitHub but it's Less Round
 @namespace    https://github.com/r-thomson
 @author       Ryan Thomson
-@version      0.2.0
+@version      0.2.1
 @license      MIT
 @homepageURL  https://github.com/r-thomson/Github-but-its-Less-Round
 @updateURL    https://raw.githubusercontent.com/r-thomson/Github-but-its-Less-Round/master/github-but-its-less-round.user.css
@@ -52,11 +52,6 @@
 		border-radius: 0.35em;
 	}
 	
-	.BtnGroup-item,
-	.BtnGroup-parent .BtnGroup-item {
-		border-radius: 0;
-	}
-	
 	.container-preview .tabnav-tabs > .selected:first-child {
 		border-top-left-radius: 3px;
 	}
@@ -93,6 +88,11 @@
 	.subnav-item:last-child {
 		border-top-right-radius: 3px;
 		border-bottom-right-radius: 3px;
+	}
+	
+	.BtnGroup-item,
+	.BtnGroup-parent .BtnGroup-item {
+		border-radius: 0;
 	}
 	
 	.rounded-left-1 {
