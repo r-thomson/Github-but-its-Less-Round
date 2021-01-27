@@ -2,7 +2,7 @@
 @name         GitHub but it's Less Round
 @namespace    https://github.com/r-thomson
 @author       Ryan Thomson
-@version      0.2.1
+@version      0.2.2
 @license      MIT
 @homepageURL  https://github.com/r-thomson/Github-but-its-Less-Round
 @updateURL    https://raw.githubusercontent.com/r-thomson/Github-but-its-Less-Round/master/github-but-its-less-round.user.css
@@ -43,13 +43,6 @@
 	
 	.rounded-1 {
 		border-radius: 3px !important;
-	}
-	
-	.IssueLabel,
-	.label, .Label,
-	.signed-commit-badge-small, .signed-commit-badge-medium, .signed-commit-badge-large,
-	.state, .State {
-		border-radius: 0.35em;
 	}
 	
 	.container-preview .tabnav-tabs > .selected:first-child {
